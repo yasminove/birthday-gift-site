@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    font-family: "Happy Monkey", system-ui;
+    font-family: "Happy Monkey", sans-serif;
     background: linear-gradient(#a2d2ff, #EFB0C9);
     color: white;
     margin: 0;
@@ -18,15 +18,7 @@ h1, h2, h3, h4, p {
     margin-bottom: 12px;
 }
 
-#birthday-age {
-    background: #EFB0C9;
-    padding: 5px 10px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-
-#birthday-date {
+#birthday-age, #birthday-date {
 
     background: #EFB0C9;
     padding: 5px 10px;
@@ -93,4 +85,34 @@ h1, h2, h3, h4, p {
 
 #course-link {
     color: white;
+}
+
+
+footer {
+    margin-bottom: 20px;
+}
+
+
+media only screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+        margin: 0;
+    }
+
+    #birthday-boy-image {
+        width: 100px;
+        border: 4px solid #EFB0C9;
+    }
+
+    .gift-img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+    .gift-img {
+        height: 300px;
+        width: 300px;
+    }
 }
